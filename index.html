@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description"
+        content="0xFolio is a free HTML template designed by Sameer Abdul Aziz. It is highly responsive and contains clean code. It uses sass and bootstrap.">
+    <meta name="keywords" content="0xFolio, Free HTML Template, Bootstrap Template, Free, CSS Template">
+    <meta name="author" content="Sameer Abdul Aziz">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Muhammad Sameer Abdul Aziz Portfolio</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <!-- Top fixed navbar -->
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark header__navbar">
+            <div class="container-lg">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarTopCollapsible" aria-controls="navbarTopCollapsible" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTopCollapsible">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Centered content -->
+        <div class="header__content">
+            <div class="header__img-box">
+                <img src="./img/developer.png" alt="John Doe" class="header__img">
+            </div>
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Muhammad Sameer Abdul Aziz</span>
+                <span class="heading-primary--sub">Full Stack Developer</span>
+            </h1>
+            <div class="header__cta-box">
+                <a href="#about" class="btn btn--full">About</a>
+                <a href="#work" class="btn btn--ghost">Work</a>
+            </div>
+        </div>
+
+        <!-- Absolute positioned social icons -->
+        <div class="header__social-icons social-icons">
+            <a href="https://www.linkedin.com/in/sameer-abdul-aziz" class="social-icons__link">
+                <svg class="icon social-icons__icon">
+                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/22128133-DUT" class="social-icons__link">
+                <svg class="icon social-icons__icon">
+                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-github"></use>
+                </svg>
+            </a>
+            <a href="mailto:sameeraziz626@gmail.com" class="social-icons__link">
+                <svg class="icon social-icons__icon">
+                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-gmail"></use>
+                </svg>
+            </a>
+        </div>
+
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="heading-secondary">About me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="about__content">
+                        <p>I am an aspiring IT professional with a passion for technology and a robust foundation in programming 
+                            and information and communications technology. Committed to continuous learning, I actively stay updated 
+                            on the latest industry trends and advancements. Eager to apply my technical skills, 
+                            I am excited to collaborate with others in a dynamic environment to solve complex challenges and 
+                            drive technological innovation. My expertise in coding principles equips me to quickly adapt and add value 
+                            in a fast-paced projects setting. I bring strong analytical abilities, troubleshooting skills, and creative 
+                            solution design, ready to make a positive impact at an organization focused on innovation. With my 
+                            enthusiasm for emerging technologies and team collaboration, I am eager to utilize my skills in systems 
+                            analysis, integration, and optimization to carry projects from conception to completion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__cta-box text-center">
+                <a href="./download/Muhammad Sameer Abdul Aziz Resume.pdf" class="btn btn--ghost" download="">
+                    <svg class="icon btn__icon-left">
+                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-file-pdf"></use>
+                    </svg>
+                    Resume
+                </a>
+                <a href="#contact" class="btn btn--full">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="container">
+            <h2 class="heading-secondary">Things I've made</h2>
+    
+            <ul class="nav nav-tabs justify-content-center mt-5 mb-4" id="workTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="projects-tab" data-toggle="tab" href="#projects" role="tab"
+                        aria-controls="projects" aria-selected="true">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab"
+                        aria-controls="experience" aria-selected="false">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab"
+                        aria-controls="skills" aria-selected="false">Core Skills</a>
+                </li>
+            </ul>
+    
+            <div class="tab-content">
+                <div class="work__content work__content--projects tab-pane fade show active" id="projects"
+                    role="tabpanel" aria-labelledby="projects-tab">
+                    <div class="row justify-content-center">
+                        <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
+                            <div class="project">
+                                <div class="project__img-box">
+                                    <img src="./img/project-1.jpg" alt="Project 1" class="project__img img-fluid">
+                                </div>
+                                <div class="project__content-box">
+                                    <h3 class="heading-tertiary">Lmet consectetur adipisicing elit.</h3>
+                                    <p class="project__details"> Architecto enim sunt amet doloremque ratione
+                                        tenetur cum cupiditate? Iure corrupti, expedita sed laboriosam qui ipsum ex
+                                        minus aspernatur quaerat porro amet!</p>
+                                    <div class="project__cta-box text-center">
+                                        <a href="#" class="btn btn--full">
+                                            <svg class="icon btn__icon-left icon-earth">
+                                                <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
+                                            </svg>
+                                            Source</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
+                            <div class="project">
+                                <div class="project__img-box">
+                                    <img src="./img/project-2.jpg" alt="Project 2" class="project__img img-fluid">
+                                </div>
+                                <div class="project__content-box">
+                                    <h3 class="heading-tertiary">Lamet sicing elit Deleniti verit</h3>
+                                    <p class="project__details"> Architecto enim sunt amet doloremque ratione
+                                        tenetur cum cupiditate? Iure corrupti, expedita sed laboriosam qui ipsum ex
+                                        minus aspernatur quaerat porro amet!</p>
+                                    <div class="project__cta-box text-center">
+                                        <a href="#" class="btn btn--full">
+                                            <svg class="icon btn__icon-left icon-earth">
+                                                <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
+                                            </svg>
+                                            Source</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
+                            <div class="project">
+                                <div class="project__img-box">
+                                    <img src="./img/project-3.jpg" alt="Project 3" class="project__img img-fluid">
+                                </div>
+                                <div class="project__content-box">
+                                    <h3 class="heading-tertiary">Sequi aspernatur vel Necessi</h3>
+                                    <p class="project__details"> Architecto enim sunt amet doloremque ratione
+                                        tenetur cum cupiditate? Iure corrupti, expedita sed laboriosam qui ipsum ex
+                                        minus aspernatur quaerat porro amet!</p>
+                                    <div class="project__cta-box text-center">
+                                        <a href="#" class="btn btn--full">
+                                            <svg class="icon btn__icon-left icon-earth">
+                                                <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
+                                            </svg>
+                                            Source</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
+                            <div class="project">
+                                <div class="project__img-box">
+                                    <img src="./img/project-4.jpg" alt="Project 4" class="project__img img-fluid">
+                                </div>
+                                <div class="project__content-box">
+                                    <h3 class="heading-tertiary">Lorem rerum enim quia </h3>
+                                    <p class="project__details"> Architecto enim sunt amet doloremque ratione
+                                        tenetur cum cupiditate? Iure corrupti, expedita sed laboriosam qui ipsum ex
+                                        minus aspernatur quaerat porro amet!</p>
+                                    <div class="project__cta-box text-center">
+                                        <a href="#" class="btn btn--full">
+                                            <svg class="icon btn__icon-left icon-earth">
+                                                <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
+                                            </svg>
+                                            Source</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
+                            <div class="project">
+                                <div class="project__img-box">
+                                    <img src="./img/project-5.jpg" alt="Project 5" class="project__img img-fluid">
+                                </div>
+                                <div class="project__content-box">
+                                    <h3 class="heading-tertiary">magnam dolores aliquid sed.</h3>
+                                    <p class="project__details"> Architecto enim sunt amet doloremque ratione
+                                        tenetur cum cupiditate? Iure corrupti, expedita sed laboriosam qui ipsum ex
+                                        minus aspernatur quaerat porro amet!</p>
+                                    <div class="project__cta-box text-center">
+                                        <a href="#" class="btn btn--full">
+                                            <svg class="icon btn__icon-left icon-earth">
+                                                <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
+                                            </svg>
+                                            Source</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
+                            <div class="project">
+                                <div class="project__img-box">
+                                    <img src="./img/project-6.jpg" alt="Project 6" class="project__img img-fluid">
+                                </div>
+                                <div class="project__content-box">
+                                    <h3 class="heading-tertiary">Eveniet sed harum sequi</h3>
+                                    <p class="project__details"> Architecto enim sunt amet doloremque ratione
+                                        tenetur cum cupiditate? Iure corrupti, expedita sed laboriosam qui ipsum ex
+                                        minus aspernatur quaerat porro amet!</p>
+                                    <div class="project__cta-box text-center">
+                                        <a href="#" class="btn btn--full">
+                                            <svg class="icon btn__icon-left icon-earth">
+                                                <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
+                                            </svg>
+                                            Source</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="work__content work__content--experience tab-pane fade" id="experience" role="tabpanel"
+                    aria-labelledby="experience-tab">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <h2>Work Experience</h2>
+                            <div class="work-experience">
+                                <h3>Intern, Software Asset Management</h3>
+                                <p>Standard Bank Group</p>
+                                <p>Jun 2024 - Present</p>
+                                <ul>
+                                    <li>Conduct advanced data analysis to identify critical trends and patterns, providing strategic insights that optimize software usage and reduce expenditures.</li>
+                                    <li>Generate detailed, high-level reports, including Inventory, AgentStatus, AWS Cloud, and Hardware reports, ensuring comprehensive and accurate data presentation.</li>
+                                    <li>Utilize Excel for sophisticated data analysis, creating complex graphs and visualizations to enhance the clarity and impact of data-driven reports.</li>
+                                    <li>Provide expert guidance in the implementation of software asset management tools, ensuring seamless integration and optimal performance.</li>
+                                    <li>Leverage Flexera software to expertly manage and optimize software assets, ensuring strict compliance with licensing agreements and identifying significant cost-saving opportunities.</li>
+                                    <li>Maintain and update the software inventory database, ensuring precise tracking and efficient management of software assets.</li>
+                                </ul>
+                                <h3>Administrator and Support Specialist</h3>
+                                <p>Kingsgate Clothing Group | Durban</p>
+                                <p>Feb 2024 - May 2024</p>
+                                <ul>
+                                    <li>Provide administrative support for the company's system named Sync, including troubleshooting, user management, and system configuration.</li>
+                                    <li>Manage factory planning and tracking using Excel, ensuring efficient resource allocation and timely production scheduling.</li>
+                                    <li>Generate various reports using the Sync system, such as Goods Received Note (GRN) reports, invoices, and sales order tracking, to facilitate decision-making and enhance operational efficiency.</li>
+                                    <li>Collaborate with cross-functional teams to identify system enhancements and streamline processes for improved productivity.</li>
+                                    <li>Offer training and guidance to colleagues on system usage and best practices, contributing to a knowledgeable and empowered workforce.</li>
+                                </ul>
+                            </div>
+                            <h2>Volunteer Experience</h2>
+                            <div class="volunteer-experience">
+                                <h3>Student Volunteer</h3>
+                                <p>IoT Lab, Durban University of Technology</p>
+                                <p>Jan 2023 - Nov 2023</p>
+                                <ul>
+                                    <li>Developed Raspberry Pi projects: Proximity sensor with sound and light feedback, Traffic light simulation system.</li>
+                                    <li>Worked with robots, drones, and 3D printing.</li>
+                                    <li>Maintained and updated computers at DUT's IoT Lab.</li>
+                                    <li>Contributed to organizing major tech events.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="work__content work__content--skills tab-pane fade" id="skills" role="tabpanel"
+                    aria-labelledby="skills-tab">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <h2>Core Skills</h2>
+                            <div class="skills">
+                                <ul class="skills-list">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>UX/UI Design</li>
+                                    <li>Human Computer Interaction</li>
+                                    <li>Python (Programming Language)</li>
+                                    <li>Java (Programming Language)</li>
+                                    <li>C# (Programming Language)</li>
+                                    <li>C++ (Programming Language)</li>
+                                    <li>SQL (Database Management, Query Optimization)</li>
+                                    <li>Software Engineering</li>
+                                    <li>Software Development</li>
+                                    <li>Web Development</li>
+                                    <li>Mobile App Development</li>
+                                    <li>Graphics Programming (OpenGL)</li>
+                                    <li>Git Version Control</li>
+                                    <li>GitHub</li>
+                                    <li>Scrum Framework</li>
+                                    <li>Agile Methodologies</li>
+                                    <li>Software Development Life Cycle (SDLC)</li>
+                                    <li>Cloud Services</li>
+                                    <li>Amazon Web Services (AWS)</li>
+                                    <li>Microsoft Azure</li>
+                                    <li>Data Analysis</li>
+                                    <li>Excel (Advanced Data Analysis)</li>
+                                    <li>Reporting & Analysis</li>
+                                    <li>Financial Operations</li>
+                                    <li>IT Asset Management</li>
+                                    <li>IT Cost Optimization</li>
+                                    <li>Cybersecurity</li>
+                                    <li>Network Administration</li>
+                                    <li>Communication Networks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter__box">
+                        <div class="counter__icon-box">
+                            <svg class="icon counter__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-embed"></use>
+                            </svg>
+                        </div>
+                        <span class="counter__count">5</span>
+                        <p class="counter__title">Years Of Coding Exp</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter__box">
+                        <div class="counter__icon-box">
+                            <svg class="icon counter__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
+                            </svg>
+                        </div>
+                        <span class="counter__count">10</span>
+                        <p class="counter__title">Projects Done</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter__box">
+                        <div class="counter__icon-box">
+                            <svg class="icon counter__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-edit"></use>
+                            </svg>
+                        </div>
+                        <span class="counter__count">10</span>
+                        <p class="counter__title">Certificates</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter__box">
+                        <div class="counter__icon-box">
+                            <svg class="icon counter__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-sun"></use>
+                            </svg>
+                        </div>
+                        <span class="counter__count" id="age"></span>
+                        <p class="counter__title">Years lived</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <h2 class="heading-secondary ">Contact me</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input required type="email" class="form-control" id="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input required type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your message</label>
+                            <textarea required type="text" class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="mt-2 btn btn--full float-right">Send <svg
+                                class="icon btn__icon-right">
+                                <use xlink:href="./img/SVG/symbol-defs.svg#icon-paper-plane"></use>
+                            </svg></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <h2 class="heading-secondary">Certificates</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 certificate-item">
+                    <div class="certificate">
+                        <div class="certificate__img-box">
+                            <img src="./img/certificate/Azure AI Fundamentals.png" alt="Certificate 1" class="certificate__img img-fluid">
+                        </div>
+                        <div class="certificate__content-box">
+                            <h3 class="heading-tertiary">Microsoft Certified: Azure AI Fundamentals</h3>
+                            <ul class="certificate__details">
+                                <li>Gained foundational AI and machine learning knowledge.</li>
+                                <li>Learned key Azure AI services.</li>
+                                <li>Developed understanding of core AI workloads.</li>
+                                <li>Mastered AI solutions using Azure tools.</li>
+                                <li>Acquired skills to integrate AI into applications.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 certificate-item">
+                    <div class="certificate">
+                        <div class="certificate__img-box">
+                            <img src="./img/certificate/Introduction to Data Science.png" alt="Certificate 2" class="certificate__img img-fluid">
+                        </div>
+                        <div class="certificate__content-box">
+                            <h3 class="heading-tertiary">Introduction to Data Science</h3>
+                            <ul class="certificate__details">
+                                <li>Fundamentals of data science and key terms like big data, analytics, modeling.</li>
+                                <li>Different types of data - structured, unstructured, spatial.</li>
+                                <li>Data visualization techniques for exploring and communicating insights.</li>
+                                <li>Common machine learning algorithms - regression, classification, clustering.</li>
+                                <li>Real-world applications and case studies of data science.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 certificate-item">
+                    <div class="certificate">
+                        <div class="certificate__img-box">
+                            <img src="./img/certificate/Flexera.png" alt="Certificate 3" class="certificate__img img-fluid">
+                        </div>
+                        <div class="certificate__content-box">
+                            <h3 class="heading-tertiary">IT Asset Management Operations</h3>
+                            <ul class="certificate__details">
+                                <li>Ensuring software license compliance to prevent legal risks.</li>
+                                <li>Managing IT assets efficiently using Flexera One.</li>
+                                <li>Optimizing cloud assets like SaaS and IaaS.</li>
+                                <li>Analyzing asset usage for cost optimization.</li>
+                                <li>Mitigating risks like security vulnerabilities.</li>
+                                <li>Proficiently generating reports and analytics to improve asset performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 certificate-item">
+                    <div class="certificate">
+                        <div class="certificate__img-box">
+                            <img src="./img/certificate/Azure Fundamentals.png" alt="Certificate 4" class="certificate__img img-fluid">
+                        </div>
+                        <div class="certificate__content-box">
+                            <h3 class="heading-tertiary">Microsoft Certified: Azure Fundamentals</h3>
+                            <ul class="certificate__details">
+                                <li>Gained foundational knowledge of Azure services.</li>
+                                <li>Learned key cloud concepts, including scalability, security, and cost management.</li>
+                                <li>Developed an understanding of core Azure services like VMs, storage, and databases.</li>
+                                <li>Mastered Azure pricing and support models for cost-effective solutions.</li>
+                                <li>Acquired skills to implement cloud-based solutions on Microsoft Azure.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 certificate-item">
+                    <div class="certificate">
+                        <div class="certificate__img-box">
+                            <img src="./img/certificate/FinOps.png" alt="Certificate 5" class="certificate__img img-fluid">
+                        </div>
+                        <div class="certificate__content-box">
+                            <h3 class="heading-tertiary">Introduction to FinOps</h3>
+                            <ul class="certificate__details">
+                                <li>Learned how to manage cloud financial operations efficiently.</li>
+                                <li>Gained skills in tracking cloud spend and optimizing costs.</li>
+                                <li>Developed understanding of collaboration between finance, engineering, and operations.</li>
+                                <li>Learned to implement cost-saving strategies without compromising performance.</li>
+                                <li>Acquired the ability to generate reports for financial transparency and decision-making.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 certificate-item">
+                    <div class="certificate">
+                        <div class="certificate__img-box">
+                            <img src="./img/certificate/AWS Essentials.png" alt="Certificate 6" class="certificate__img img-fluid">
+                        </div>
+                        <div class="certificate__content-box">
+                            <h3 class="heading-tertiary">AWS Cloud Practitioner Essentials</h3>
+                            <ul class="certificate__details">
+                                <li>The fundamentals and benefits of cloud computing.</li>
+                                <li>The AWS global infrastructure, regions, availability zones.</li>
+                                <li>AWS cloud services for compute, storage, database, networking.</li>
+                                <li>AWS security features and best practices.</li>
+                                <li>AWS billing, account management, cost optimization.</li>
+                                <li>The fundamentals of cloud economics and pricing models.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2 mt-n1 text-center"><a id="toggleCertificatesBtn" class="btn btn--full">Show all</a></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-12  py-5 text-center mb-2">
+                    <h3 class="mb-4 heading-tertiary footer__social-heading">Stay connected</h3>
+                    <!-- Absolute positioned social icons -->
+                    <div class=" social-icons social-icons--lg">
+                        <a href="https://www.linkedin.com/in/sameer-abdul-aziz" class="social-icons__link">
+                            <svg class="icon social-icons__icon">
+                                <use xlink:href="./img/SVG/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/22128133-DUT" class="social-icons__link">
+                            <svg class="icon social-icons__icon">
+                                <use xlink:href="./img/SVG/symbol-defs.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                        <a href="mailto:sameeraziz626@gmail.com" class="social-icons__link">
+                            <svg class="icon social-icons__icon">
+                                <use xlink:href="./img/SVG/symbol-defs.svg#icon-gmail"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="footer__credits font-1rem">
+                            <a href="https://github.com/0xaliraza/0xfolio">Portfolio</a>,
+                        designed by <a href="#about">Sameer Abdul Aziz</a>.</p>
+                </div>
+                <div class="col-12 mt-auto">
+                    <nav class="nav footer__nav justify-content-around">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#work">Projects</a>
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/vendors/jquery/jquery.min.js"></script>
+    <script src="./js/vendors/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./js/vendors/popper/popper.min.js"></script>
+    <script src="./js/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</body>
+
+</html>
