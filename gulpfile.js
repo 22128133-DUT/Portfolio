@@ -33,3 +33,5 @@ function watchTask() {
 }
 
 exports.default = series(styles, scripts, watchTask);
+
+exports.build = series(styles, scripts);
