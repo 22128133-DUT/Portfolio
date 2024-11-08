@@ -103,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update the age in the HTML
     document.getElementById('age').textContent = age;
 
+    
 	const certificates = document.querySelectorAll('.certificate-item');
     const toggleCertificatesBtn = document.getElementById('toggleCertificatesBtn');
     let showingAll = false;
